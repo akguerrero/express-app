@@ -1,0 +1,12 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "npm" # Since your repository is for an Express JS app, you should use the npm package manager
+    directory: "/" # The directory argument specifies the location of the package manifests. Package manifests are files that list the packages that you want to update. For Express JS apps, the package manifests are typically located in the package.json file. So, the value of the directory argument should be /
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 12 # You can limit the number of Dependabot pull requests by setting this
